@@ -1,0 +1,79 @@
+:root {
+  --font-main: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --color-text-dark: rgba(255, 255, 255, 0.87);
+  --color-bg-dark: #242424;
+  --color-text-light: #213547;
+  --color-bg-light: #ffffff;
+  --color-primary: #646cff;
+  --color-primary-hover: #535bf2;
+  --color-button-bg-dark: #1a1a1a;
+  --color-button-bg-light: #f9f9f9;
+
+  font-family: var(--font-main);
+  font-weight: 400;
+  line-height: 1.5;
+  color-scheme: light dark;
+  color: var(--color-text-dark);
+  background-color: var(--color-bg-dark);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  font-weight: 500;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--color-primary-hover);
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  font-family: inherit;
+  font-size: 1em;
+  font-weight: 500;
+  padding: 0.6em 1.2em;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background-color: var(--color-button-bg-dark);
+  cursor: pointer;
+  transition: border-color 0.25s ease;
+}
+button:hover {
+  border-color: var(--color-primary);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: var(--color-text-light);
+    background-color: var(--color-bg-light);
+  }
+  button {
+    background-color: var(--color-button-bg-light);
+  }
+  a:hover {
+    color: #747bff;
+  }
+}
